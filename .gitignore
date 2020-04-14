@@ -1,4 +1,5 @@
-pom.xml
-HackerRank.iml
 /target
 /.idea
+pom.xml
+HackerRank.iml
+.gitignore

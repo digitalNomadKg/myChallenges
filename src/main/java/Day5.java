@@ -15,10 +15,13 @@ public class Day5 {
 
     }
 
+
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
         result();
+        scanner.close();
     }
 }

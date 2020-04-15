@@ -1,4 +1,4 @@
-package Extra;
+package extra;
 
 public class LoopPractice {
 

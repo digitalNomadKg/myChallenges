@@ -7,7 +7,7 @@ double->float->long->int->char->short->byte
  */
 
 
-package Extra;
+package extra;
 
 public class CastingExample {
 

@@ -1,9 +1,11 @@
 package Extra;
 
-public class MadLibs_User {
-    MadLibs madLibs = new MadLibs();
+import java.util.Random;
 
-    private String story, name, adjective1, adjective2, noun1, noun2, noun3, adverb, randomNum;
+public class MadLibs_User {
+    Random random_user = new Random();
+
+    String story, name, adjective1, adjective2, noun1, noun2, noun3, adverb, randomNum;
 
     public String getStory() {
         return story;
@@ -74,14 +76,14 @@ public class MadLibs_User {
     }
 
     public void setRandomNum() {
-        int num = Math.abs(madLibs.random.nextInt()) % 100;
+        int num = Math.abs(random_user.nextInt()) % 100;
         int index = 0;
-        int [] numberHolder = new int[3];
-        while (index<numberHolder.length){
+        int[] numberHolder = new int[3];
+        while (index < numberHolder.length) {
             numberHolder[index] = num + index;
-            index ++;
+            index++;
         }
-        String randomNum = "not " + numberHolder[0] + ", not " + numberHolder[1] + ", but " + numberHolder[2];
+        randomNum = "not " + numberHolder[0] + ", not " + numberHolder[1] + ", but " + numberHolder[2];
     }
 
 }

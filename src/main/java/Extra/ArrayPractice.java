@@ -35,11 +35,11 @@ public class ArrayPractice {
         System.out.println(Arrays.toString(intArray2));
         System.out.println(Arrays.toString(intArray3));
         System.out.println("-------------------------------------");
-        //Custom print out arrrauy
+        //Custom print out array
         printArray(intArray2);
         printArray(intArray3);
 
-        //|Retrive objects
+        //|Retrieve objects
         System.out.println(intArray2[3]);
 
         //Given functions

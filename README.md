@@ -9,5 +9,8 @@ Here you can find my solutions to HackerRank tutorials.
 - Day 4 - Class vs. Instance
 - Day 5 - Loops
 - Day 6 - Let's review
-- Day 7 - Arrays - working
+- Day 7 - Arrays
+- Day 8 - Dictionaries and Maps
+          
+
  

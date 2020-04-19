@@ -9,7 +9,7 @@ public class ArrayPractice {
         for (int i = 0; i < array.length; i++) {
             int item = array[i];
             System.out.print(item);
-            if (i<array.length-1){
+            if (i < array.length - 1) {
                 System.out.print(", ");
             }
         }
@@ -38,11 +38,22 @@ public class ArrayPractice {
         //Custom print out array
         printArray(intArray2);
         printArray(intArray3);
+        System.out.println();
 
-        //|Retrieve objects
+        //Retrieve objects
         System.out.println(intArray2[3]);
+        System.out.println();
 
         //Given functions
         Arrays.sort(intArray3);
+        printArray(intArray3);
+
+        System.out.println();
+        //Special for each loop
+        for (String s : shoppingList) {
+            System.out.print(s + ",");
+        }
+
     }
+
 }

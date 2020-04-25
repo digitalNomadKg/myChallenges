@@ -6,41 +6,39 @@ import java.util.Scanner;
 
 public class Day8 {
 
+    public static void hashMapMethod() {
 
-    public static void phoneBookFunction() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter number to see those contact");
+        final Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter number, to set number of contacts in phone book");
         int n = scanner.nextInt();
+        System.out.println("Please set name and phone number");
+
+        scanner.nextLine();
+
+        Map<String, Integer> phoneBook = new HashMap<String, Integer>();
         for (int i = 0; i < n; i++) {
             String name = scanner.next();
             int phone = scanner.nextInt();
-            // Write code here
-
+            scanner.nextLine();
+            phoneBook.put(name, phone);
         }
+        System.out.println("Please choose name from phonebook");
         while (scanner.hasNext()) {
             String s = scanner.next();
-            // Write code here
+            if (phoneBook.get(s) == null) {
+                System.out.println("Not found");
+            } else {
+                System.out.println(s + "=" + phoneBook.get(s));
+            }
         }
         scanner.close();
-
     }
-
-    public static void printingResult() {
-        phoneBookFunction();
-    }
-
 
     public static void main(String[] arg) {
-        Map<String, Integer> phoneBook = new HashMap<String, Integer>();
-        phoneBook.put("sam", 99912222);
-        phoneBook.put("tom", 11122222);
-        phoneBook.put("harry", 12299933);
-        phoneBook.put("sam", null);
-        phoneBook.put("edward", null);
-        phoneBook.put("harry", null);
-
-
-        printingResult();
+        hashMapMethod();
 
     }
 }
+
+
+

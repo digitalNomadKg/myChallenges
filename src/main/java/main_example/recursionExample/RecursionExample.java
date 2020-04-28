@@ -2,6 +2,7 @@ package main_example.recursionExample;
 
 public class RecursionExample {
 
+    //Method1
     public static void reduceByOne(int n) {
         if (n >= 0) {
             reduceByOne(n - 1);
@@ -9,7 +10,7 @@ public class RecursionExample {
         System.out.println("Completed call: " + n);
     }
 
-
+    //Method2
     public static void printNumbers(int num) {
         if (num == 0) {
             return;

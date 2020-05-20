@@ -5,7 +5,7 @@ public class Day10 {
     public static final Scanner scanner = new Scanner(System.in);
 
     public static void result() {
-        System.out.println("Please enter number decimal number:");
+        System.out.println("Please enter decimal number:");
         calculation();
 
     }

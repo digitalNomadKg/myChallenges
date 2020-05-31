@@ -1,7 +1,8 @@
+package extra;
+
 import java.util.Scanner;
 
-public class Day11 {
-
+public class D2arrays {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -28,4 +29,8 @@ public class Day11 {
         scanner.close();
         System.out.println(maxSum);
     }
+
 }
+
+
+

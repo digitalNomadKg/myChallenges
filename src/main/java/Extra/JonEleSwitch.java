@@ -1,6 +1,11 @@
 package extra;
 
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
+
+import javax.lang.model.type.ArrayType;
+import java.lang.reflect.Array;
 import java.util.Date;
 
 public class JonEleSwitch {
@@ -34,6 +39,7 @@ public class JonEleSwitch {
         Date date = new Date();
         System.out.println(date);
         System.out.println(date.getTime());
+
         }
 
 
